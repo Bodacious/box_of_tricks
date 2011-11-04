@@ -1,4 +1,4 @@
-# Box of Tricks
+# [Box of Tricks](http://github.com/KatanaCode/box_of_tricks "Katana Code's Box of Tricks")
 
 This gem contains a bunch of CSS classes and Rails helper methods that we rely upon regularly
 
