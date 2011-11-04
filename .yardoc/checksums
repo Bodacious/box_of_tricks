@@ -1,0 +1,5 @@
+lib/box_of_tricks.rb 93270bf7d03db82374f2528dbaacb0ce7ac4a35f
+lib/box_of_tricks/engine.rb cfed5c5a2dad2ec6433eed423865064adffe3115
+lib/box_of_tricks/version.rb 686420a1084de238c19af6cad7f9ea46fabfeef5
+app/helpers/box_of_tricks_helper.rb 2550733aea53d2eee195298bfb77e2604ab460ba
+app/helpers/box_of_tricks/box_of_tricks_helper.rb f366f4502c1475f08ae75902bba79ef319fc2c1a
