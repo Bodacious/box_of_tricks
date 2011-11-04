@@ -557,62 +557,76 @@ $(generateTOC);
     <div id="content">
       <h1>Box of Tricks</h1>
       <div id="readme">
-  <h1>Box of Tricks</h1>
-
-<p>This gem contains a bunch of CSS classes and Rails helper methods that we rely upon regularly</p>
-
-<h2>View Helpers</h2>
-
-<h3>BoxOfTricks#field</h3>
-
-<p>``` rhtml
-&lt;%= field id: "my_field", class: "user_form" do %>
-  &lt;%= text_field_tag :user, :username %>
-&lt;% end %></p>
-
-<!-- generates: -->
-
-
-<div class="field user_form" id="my_field">
-  <input type="text" name="user[username]" id="user_username">
-</div>
-
-
-<p>```</p>
-
-<h3>BoxOfTricks#actions</h3>
-
-<p>``` rhtml
-&lt;%= actions id: "my_actions", class: "user_form" do %>
-  &lt;%= submit_tag("Save") %>
-&lt;% end %></p>
-
-<!-- generates: -->
-
-
-<div class="actions user_form" id="my_actions">
-  <input type="submit" value="Save" id="user_submit">
-</div>
-
-
-<p>```</p>
-
-<h3>BoxOfTricks#div</h3>
-
-<p>``` rhtml
-&lt;%= div id: "some_div", class: "vague_class" do %>
-  &lt;%= link_to("Click here", "#") %>
-&lt;% end %></p>
-
-<!-- generates: -->
-
-
-<div id="some_div" class="vague_class">
-  <a href="#">Click here</a>
-</div>
-
-
-<p>```</p>
+  <p>
+# Box of Tricks
+</p>
+<p>
+This gem contains a bunch of CSS classes and Rails helper methods that we
+rely upon regularly
+</p>
+<p>
+## View Helpers
+</p>
+<p>
+### BoxOfTricks#field
+</p>
+<p>
+``` rhtml <%= field id: &#8220;my_field&#8221;, class:
+&#8220;user_form&#8221; do %>
+</p>
+<pre class="code">
+  &lt;%= text_field_tag :user, :username %&gt;
+</pre>
+<p>
+<% end %> <!&#8212; generates: --> <div class=&#8220;field
+user_form&#8221; id=&#8220;my_field&#8221;>
+</p>
+<pre class="code">
+  &lt;input type=&quot;text&quot; name=&quot;user[username]&quot; id=&quot;user_username&quot;&gt;
+</pre>
+<p>
+</div> ```
+</p>
+<p>
+### BoxOfTricks#actions
+</p>
+<p>
+``` rhtml <%= actions id: &#8220;my_actions&#8221;, class:
+&#8220;user_form&#8221; do %>
+</p>
+<pre class="code">
+  &lt;%= submit_tag(&quot;Save&quot;) %&gt;
+</pre>
+<p>
+<% end %> <!&#8212; generates: --> <div class=&#8220;actions
+user_form&#8221; id=&#8220;my_actions&#8221;>
+</p>
+<pre class="code">
+  &lt;input type=&quot;submit&quot; value=&quot;Save&quot; id=&quot;user_submit&quot;&gt;
+</pre>
+<p>
+</div> ```
+</p>
+<p>
+### BoxOfTricks#div
+</p>
+<p>
+``` rhtml <%= div id: &#8220;some_div&#8221;, class:
+&#8220;vague_class&#8221; do %>
+</p>
+<pre class="code">
+  &lt;%= link_to(&quot;Click here&quot;, &quot;#&quot;) %&gt;
+</pre>
+<p>
+<% end %> <!&#8212; generates: --> <div id=&#8220;some_div&#8221;
+class=&#8220;vague_class&#8221;>
+</p>
+<pre class="code">
+  &lt;a href=&quot;#&quot;&gt;Click here&lt;/a&gt;
+</pre>
+<p>
+</div> ```
+</p>
 
 </div><h1>Top Level Namespace
   
@@ -804,7 +818,9 @@ $(generateTOC);
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Creates a div with class 'actions'.</p>
+    <span class="summary_desc"><div class='inline'><p>
+Creates a div with class &#8216;actions&#8217;.
+</p>
 </div></span>
   
 </li>
@@ -826,7 +842,9 @@ $(generateTOC);
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Creates a div tag.</p>
+    <span class="summary_desc"><div class='inline'><p>
+Creates a div tag.
+</p>
 </div></span>
   
 </li>
@@ -848,7 +866,9 @@ $(generateTOC);
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Creates a div with class 'field'.</p>
+    <span class="summary_desc"><div class='inline'><p>
+Creates a div with class &#8216;field&#8217;.
+</p>
 </div></span>
   
 </li>
@@ -872,22 +892,22 @@ $(generateTOC);
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>Creates a div with class 'actions'. All of the usual options may also be applied
-here including the class argument.
-  &lt;%= actions class: "sign_up_actions", id: "sign_up_links" do %></p>
-
-<pre class="code">&lt;%= f.submit &quot;Sign Up&quot; %&gt;
+    <p>
+Creates a div with class &#8216;actions&#8217;. All of the usual options
+may also be applied here including the class argument.
+</p>
+<pre class="code">
+  &lt;%= actions class: &quot;sign_up_actions&quot;, id: &quot;sign_up_links&quot; do %&gt;
+    &lt;%= f.submit &quot;Sign Up&quot; %&gt;
+  &lt;% end %&gt;
+  &lt;!-- generates --&gt;
+  &lt;div class=&quot;actions sign_up_actions&quot; id=&quot;sign_up_links&quot;&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Sign Up&quot;&gt;
+  &lt;/div&gt;
 </pre>
-
-<p>  &lt;% end %>
-  <!-- generates -->
-  <div class="actions sign_up_actions" id="sign_up_links"></p>
-
-<pre class="code">&lt;input type=&quot;submit&quot; value=&quot;Sign Up&quot;&gt;
-</pre>
-
-<p>  </div>
-Content may be passed as a block or as the first argument</p>
+<p>
+Content may be passed as a block or as the first argument
+</p>
 
 
   </div>
@@ -903,7 +923,9 @@ Content may be passed as a block or as the first argument</p>
       
       
         
-        <div class='inline'><p>Gavin Morrice</p>
+        <div class='inline'><p>
+Gavin Morrice
+</p>
 </div>
       
     </li>
@@ -940,8 +962,11 @@ Content may be passed as a block or as the first argument</p>
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>Creates a div tag. This is basically a short-hand for
-  content_tag(:div)</p>
+    <p>
+Creates a div tag. This is basically a short-hand for
+</p>
+<pre class="code">
+  <span class='id content_tag'>content_tag</span><span class='lparen'>(</span><span class='symbol'>:div</span><span class='rparen'>)</span></pre>
 
 
   </div>
@@ -957,7 +982,9 @@ Content may be passed as a block or as the first argument</p>
       
       
         
-        <div class='inline'><p>Gavin Morrice</p>
+        <div class='inline'><p>
+Gavin Morrice
+</p>
 </div>
       
     </li>
@@ -994,12 +1021,18 @@ Content may be passed as a block or as the first argument</p>
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>Creates a div with class 'field'. All of the usual options may also be applied
-here including the class argument.
-  &lt;%= field "Hello", class: "my_field", id: "field_1" %>
-  <!-- generates -->
-  <div class="my_field field" id="field_1">Hello</div>
-Content may be passed as a block or as the first argument</p>
+    <p>
+Creates a div with class &#8216;field&#8217;. All of the usual options may
+also be applied here including the class argument.
+</p>
+<pre class="code">
+  &lt;%= field &quot;Hello&quot;, class: &quot;my_field&quot;, id: &quot;field_1&quot; %&gt;
+  &lt;!-- generates --&gt;
+  &lt;div class=&quot;my_field field&quot; id=&quot;field_1&quot;&gt;Hello&lt;/div&gt;
+</pre>
+<p>
+Content may be passed as a block or as the first argument
+</p>
 
 
   </div>
@@ -1015,7 +1048,9 @@ Content may be passed as a block or as the first argument</p>
       
       
         
-        <div class='inline'><p>Gavin Morrice</p>
+        <div class='inline'><p>
+Gavin Morrice
+</p>
 </div>
       
     </li>
@@ -1078,7 +1113,7 @@ Content may be passed as a block or as the first argument</p>
     </div>
     
     <div id="footer">
-  Generated on Fri Nov  4 23:50:01 2011 by 
+  Generated on Fri Nov  4 23:50:58 2011 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.7.3 (ruby-1.9.2).
 </div>
