@@ -6,26 +6,23 @@ This gem contains a bunch of CSS classes and Rails helper methods that we rely u
 
 ### BoxOfTricks#title
 
+Sets the page title if passed an argument, otherwise returns the page title.
+
 ``` rhtml
-# Sets the page title if passed an argument, otherwise returns the page title.
-#   # layouts/application.html.erb
-#   <DOCTYPE!>
-#   <html>
-#   <head>
-#     <title><%= title %></title>
-#   </head>
-#   <body>
-#     <%= yield %>
-#   </body>
-#   </html>
-# 
-#   # users/show.hmtl.erb
-#   <% title @user.username %>
-# Content may be passed as a block or as the first argument
-# @author Gavin Morrice  
-def title(content = nil)
-  content ? @content = content : @content
-end
+ 
+# layouts/application.html.erb
+ <DOCTYPE!>
+ <html>
+ <head>
+   <title><%= title %></title>
+ </head>
+ <body>
+   <%= yield %>
+ </body>
+ </html>
+ 
+ # users/show.hmtl.erb
+ <% title @user.username %>
 ```
 
 ### BoxOfTricks#field
