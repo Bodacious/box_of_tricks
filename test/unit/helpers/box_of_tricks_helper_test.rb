@@ -53,4 +53,8 @@ class BoxOfTricksHelperTest < ActionView::TestCase
       html5_shim
   end
   
+  test "clearfix" do
+    assert_dom_equal %{<br class="clear">}, clearfix    
+  end
+  
 end

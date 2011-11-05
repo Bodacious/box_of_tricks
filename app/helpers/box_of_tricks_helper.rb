@@ -59,6 +59,10 @@ module BoxOfTricksHelper
     %{<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->}.html_safe
   end
   
+  # Add a <br> tag to clear any floated elements which came before
+  def clearfix
+    %{<br class="clear">}
+  end
   
 private
 
