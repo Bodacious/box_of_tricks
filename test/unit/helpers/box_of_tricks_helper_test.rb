@@ -1,6 +1,12 @@
 require 'test_helper'
 
 class BoxOfTricksHelperTest < ActionView::TestCase
+  
+  test "title" do
+    title("Set Title")
+    assert_equal title, "Set Title"
+  end
+  
   test "div_with_class" do
     assert_dom_equal %{<div class="user">Bodacious</div>}, 
       div_with_class(:user, "Bodacious")
