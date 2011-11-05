@@ -11,7 +11,7 @@ Sets the page title if passed an argument, otherwise returns the page title.
 ``` rhtml
  
 # layouts/application.html.erb
- <DOCTYPE!>
+ <!DOCTYPE>
  <html>
  <head>
    <title><%= title %></title>
