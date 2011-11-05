@@ -1,7 +1,20 @@
-// Some common classes
+// Text alignment
 .align_left{text-align: left}
 .align_center{text-align: center}
 .align_right{text-align: right}
+
+// Floated
+.float_left{float: left}
+.float_right{float: right}
+
+// Clearing floats
 .clear{clear:both}
 .clear_left{clear:left}
 .clear_right{clear:right}
+
+// Hidden
+.hidden{display:none;visibility: hidden;}
+
+// Font styles
+.serif{font-family: Times;}
+.sans_serif{font-family: Arial;}
