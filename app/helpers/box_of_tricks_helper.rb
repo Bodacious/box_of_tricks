@@ -53,11 +53,18 @@ module BoxOfTricksHelper
     content_tag(:div, *args, &block)
   end
   
+  # Load a JS file if browser is Internet Explorer to ensure backward-compatibility
+  # of HTML5 elements
+  def html5_shim
+    %{<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->}.html_safe
+  end
+  
   
 private
 
   # Create a div with default class. This is used as a helper to the other
-  # div helper methods
+  # div helper methods.
+  # @note This should be the first child of your document's head element
   def div_with_class(*args, &block)
     tag_with_class :div, *args, &block
   end

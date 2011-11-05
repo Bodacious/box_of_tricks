@@ -48,4 +48,9 @@ class BoxOfTricksHelperTest < ActionView::TestCase
       div(class: "muppet") { "Muppet 1" }
   end
   
+  test "html5_shim" do
+    assert_dom_equal %{<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->},
+      html5_shim
+  end
+  
 end
