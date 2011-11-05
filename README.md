@@ -4,8 +4,6 @@ This gem contains a bunch of CSS classes and Rails helper methods that we rely u
 
 ## View Helpers
 
-### BoxOfTricks#field
-
 ### BoxOfTricks#title
 
 ``` rhtml
@@ -29,6 +27,8 @@ def title(content = nil)
   content ? @content = content : @content
 end
 ```
+
+### BoxOfTricks#field
 
 ``` rhtml
 <%= field id: "my_field", class: "user_form" do %>
