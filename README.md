@@ -40,8 +40,6 @@ end
 </div>
 ```
 
-
-
 ### BoxOfTricks#actions
 
 ``` rhtml
@@ -64,4 +62,25 @@ end
 <div id="some_div" class="vague_class">
   <a href="#">Click here</a>
 </div>
+```
+
+## CSS
+
+### HTML5 Reset Sheet
+
+To include an HTML reset to your CSS, simply add the following to your application.css file:
+
+``` css
+/* 
+*= require html5reset 
+*/
+```
+
+There's also a file named  [**box_of_tricks.css.scss*](https://github.com/KatanaCode/box_of_tricks/blob/master/app/assets/stylesheets/box_of_tricks.css.scss) which comes with a bunch of CSS
+classes that I constantly rely on.
+
+``` css
+/* 
+*= require html5reset 
+*/
 ```
