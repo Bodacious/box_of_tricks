@@ -76,11 +76,11 @@ To include an HTML reset to your CSS, simply add the following to your applicati
 */
 ```
 
-There's also a file named  [**box_of_tricks.css.scss*](https://github.com/KatanaCode/box_of_tricks/blob/master/app/assets/stylesheets/box_of_tricks.css.scss) which comes with a bunch of CSS
+There's also a file named  [**box_of_tricks.css.scss**](https://github.com/KatanaCode/box_of_tricks/blob/master/app/assets/stylesheets/box_of_tricks.css.scss) which comes with a bunch of CSS
 classes that I constantly rely on.
 
 ``` css
 /* 
-*= require html5reset 
+*= require box_of_tricks 
 */
 ```
