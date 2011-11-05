@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = BoxOfTricks::VERSION
   s.authors     = ["Gavin Morrice"]
   s.email       = ["gavin@gavinmorrice.com"]
-  s.homepage    = "TODO"
+  s.homepage    = "http://github.com/KatanaCode/box_of_tricks"
   s.summary     = "A collection of CSS classes and Rails helper methods"
   s.description = "A collection of CSS classes and Rails helper methods. View the README for more info"
 
