@@ -1,6 +1,7 @@
 .rvmrc
 .DS_Store
 .bundle/
+Gemfile.lock
 log/*.log
 pkg/
 test/dummy/db/*.sqlite3
