@@ -17,7 +17,7 @@ module BoxOfTricksHelper
   # Content may be passed as a block or as the first argument
   # @author Gavin Morrice  
   def title(content = nil)
-    content ? @content = content : @content
+    content ? @title = content : @title
   end
   
   # Creates a div with class 'field'. All of the usual options may also be applied
